@@ -3,4 +3,5 @@ spring:
     config:
       server:
         git:
-          uri: D:\workspace\config-server
+          uri: /home/sohit/java-workspace/config-server
+          #uri: D:\workspace\config-server
