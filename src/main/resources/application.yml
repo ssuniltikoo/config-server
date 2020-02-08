@@ -1,5 +1,18 @@
 spring:
   application:
     name: config-server
+  cloud:
+    loadbalancer:
+      ribbon:
+        enabled: true
 server:
   port: 8089
+
+eureka:
+  client:
+    registerWithEureka: true
+    fetchRegistry: true
+    sevice-Url:
+      defaultZone: http://localhost:8761/eureka/
+  instance:
+    hostname: localhost
